@@ -1,5 +1,6 @@
 import 'package:appflutter/duration.dart';
 import 'package:appflutter/maps.dart';
+import 'package:appflutter/notifications.dart';
 import 'package:flutter/material.dart';
 
 import 'home.dart';
@@ -16,11 +17,11 @@ class __NavbarState extends State<Navbar> {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        tabBarTheme: TabBarTheme(
+        tabBarTheme: const TabBarTheme(
           labelColor: Colors.blue,unselectedLabelColor: Colors.grey
         )
       ),
-      home: DefaultTabController(
+      home: const DefaultTabController(
         length: 3,
         child: Scaffold(
            bottomNavigationBar: BottomAppBar(
@@ -42,7 +43,7 @@ class __NavbarState extends State<Navbar> {
               children: [
                 Center(child: Acceuil()),
                 Center(child: MapSample()),
-                Center(child: Text("3"))
+                Center(child: NotificationPage())
               ],
             ),
         ),
