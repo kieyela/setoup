@@ -12,10 +12,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-       title: "Set oup",
-     home: const Navbar()
+       title: "Step Out",
+     home: Navbar()
     );
       
       
